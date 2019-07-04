@@ -1,0 +1,16 @@
+create table chem_substance (
+	subs_ID int(11) NOT NULL AUTO_INCREMENT,
+	subs_HDS varchar(100) DEFAULT NULL,
+	subs_PARTNO varchar(100) DEFAULT NULL,
+	subs_NAME varchar(200) DEFAULT NULL,
+	subs_PHYSPROP varchar(100) DEFAULT NULL,
+	subs_BOTTLETYPE varchar(100) DEFAULT NULL,
+	subs_UNIT varchar(100) DEFAULT NULL,
+	subs_QTY int(11) DEFAULT NULL,
+	subs_GHS_PICTO varchar(300) DEFAULT NULL,
+	subs_GHS_PROPE varchar(400) DEFAULT NULL,
+	subs_AREA varchar(100) DEFAULT null,
+	PRIMARY KEY (subs_ID)
+);
+insert into chem_substance (subs_HDS,subs_PARTNO,subs_NAME,subs_PHYSPROP,subs_BOTTLETYPE,subs_UNIT,subs_QTY,subs_GHS_PICTO,subs_GHS_PROPE, subs_AREA)
+values ("HDS","PART NO","CHEMICAL SUBSTANCE NAME","subs_PHYSPROP","METAL","Kg",30,"GHS01, GHS02","Enviromental","MEDTRONIC");
